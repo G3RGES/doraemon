@@ -32,7 +32,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           {/* logo section */}
           <div className="flex flex-row items-center gap-4">
-            <GiAtomicSlashes className="text-3xl text-primary" />
+            <GiAtomicSlashes className="text-6xl text-primary" />
             <div className="flex flex-col text-2xl font-bold text-gray-600 leading-5">
               <span className="">Dora</span>
               <span className="">emon</span>
@@ -41,9 +41,13 @@ const Navbar = () => {
 
           {/* links section */}
           <div className="hidden md:block">
-            <ul className="">
+            <ul className="flex flex-row justify-center items-center gap-4">
               {MenuLinks.map((link, idx) => (
-                <li key={idx} className=""></li>
+                <li key={idx} className="">
+                  <a href={link.link} className="navlink">
+                    {link.name}
+                  </a>
+                </li>
               ))}
             </ul>
           </div>
