@@ -27,7 +27,7 @@ const MenuLinks = [
 
 const Navbar = () => {
   return (
-    <div className="">
+    <nv className="">
       <div className="container">
         <div className="flex items-center justify-between">
           {/* logo section */}
@@ -62,10 +62,16 @@ const Navbar = () => {
             <div className="bg-primary hover:bg-primary/80 p-3 rounded-full cursor-pointer">
               <FaSearch className="text-white text-sm" />
             </div>
+            <div className="center navlink cursor-pointer">
+              Eng
+              <span className="">
+                <MdArrowDropDown className="text-xl text-primary" />
+              </span>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </nv>
   );
 };
 
