@@ -53,10 +53,14 @@ const Navbar = () => {
           </div>
 
           {/* search section */}
-          <div className="">
-            <input className="" type="text" placeholder="Search..." />
-            <div className="">
-              <FaSearch className="text-primary" />
+          <div className="flex flex-row items-center gap-6">
+            <input
+              className="hidden sm:block py-2 px-3 rounded-full bg-slate-200"
+              type="text"
+              placeholder="Search..."
+            />
+            <div className="bg-primary hover:bg-primary/80 p-3 rounded-full cursor-pointer">
+              <FaSearch className="text-white text-sm" />
             </div>
           </div>
         </div>
