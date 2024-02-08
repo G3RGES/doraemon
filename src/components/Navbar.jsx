@@ -41,7 +41,7 @@ const Navbar = () => {
 
           {/* links section */}
           <div className="hidden md:block">
-            <ul className="flex flex-row justify-center items-center gap-4">
+            <ul className="center">
               {MenuLinks.map((link, idx) => (
                 <li key={idx} className="">
                   <a href={link.link} className="navlink">
@@ -53,7 +53,12 @@ const Navbar = () => {
           </div>
 
           {/* search section */}
-          <div className=""></div>
+          <div className="">
+            <input className="" type="text" placeholder="Search..." />
+            <div className="">
+              <FaSearch className="text-primary" />
+            </div>
+          </div>
         </div>
       </div>
     </div>
