@@ -45,11 +45,11 @@ const Hero = () => {
               <img
                 src={HeroImg}
                 alt="doraemon"
-                className="w-[180px] sm:w-[240px] "
+                className="w-[180px] sm:w-[240px] lg:w-[340px] mx-auto relative z-30 "
               />
               <div
-                className="absolute bottom-0 left-0 bg-black 
-              w-[180px] h-[20px] blur-2xl mx-auto"
+                className="absolute bottom-0 left-0 z-0 bg-black 
+              w-[240px] h-[20px] blur-2xl mx-auto"
               ></div>
             </div>
             {/* review content section */}
