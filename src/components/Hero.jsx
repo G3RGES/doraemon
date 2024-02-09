@@ -53,7 +53,27 @@ const Hero = () => {
               ></div>
             </div>
             {/* review content section */}
-            <div className=""></div>
+            <div className="sm:pl-16 md:pl-24 flex justify-center sm:justify-end">
+              <div className="flex items-center justify-end">
+                <div className="">
+                  <img
+                    className="w-full h-[105px] object-cover rounded-2xl shadow-md
+                  hover:scale-110 duration-200 cursor-pointer"
+                    src={HeroImg2}
+                    alt="doraemon review"
+                  />
+                  <p className="text-sm flex items-center gap-2">
+                    4.7{" "}
+                    <span>
+                      <FaStar className="text-primary" />
+                    </span>
+                  </p>
+                  <p className="text-sm text-gray-400">
+                    Bandai Figuartszero Doraemont
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
