@@ -7,6 +7,7 @@ import "aos/dist/aos.css";
 
 // components
 import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
 
 const App = () => {
   useEffect(() => {
@@ -21,6 +22,7 @@ const App = () => {
   return (
     <div className="overflow-hidden">
       <Navbar />
+      <Hero />
     </div>
   );
 };
