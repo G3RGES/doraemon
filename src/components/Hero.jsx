@@ -4,11 +4,13 @@ import React from "react";
 // assets
 import HeroImg from "../assets/dora-hero.png";
 import HeroImg2 from "../assets/dora.png";
-// import HeroBottom from "./HeroBottom";
 
 // icons
 import { FaStar, FaYoutube } from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
+
+// components
+import HeroBottom from "./HeroBottom";
 
 const Hero = () => {
   return (
@@ -45,11 +47,11 @@ const Hero = () => {
               <img
                 src={HeroImg}
                 alt="doraemon"
-                className="w-[180px] sm:w-[240px] lg:w-[340px] mx-auto relative z-30 "
+                className="w-[180px] sm:w-[240px] lg:w-[340px] mx-auto relative z-50 "
               />
               <div
                 className="absolute bottom-0 left-0 z-0 bg-black 
-              w-[240px] h-[20px] blur-2xl mx-auto"
+              w-[260px] h-[20px] blur-2xl mx-auto"
               ></div>
             </div>
             {/* review content section */}
@@ -76,6 +78,9 @@ const Hero = () => {
             </div>
           </div>
         </div>
+
+        {/* Hero Bottom Section */}
+        <HeroBottom />
       </div>
     </>
   );
