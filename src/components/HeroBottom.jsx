@@ -1,6 +1,10 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 
+// icons
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import { FaArrowDown } from "react-icons/fa";
+
 const HeroBottom = () => {
   return (
     <>
@@ -15,6 +19,15 @@ const HeroBottom = () => {
         >
           Doraemon
         </h1>
+      </div>
+
+      {/* bottom section */}
+      <div className="">
+        <div className="">
+          {/* first column */}
+          {/* second column */}
+          {/* third column */}
+        </div>
       </div>
     </>
   );
