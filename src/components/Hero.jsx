@@ -1,5 +1,6 @@
+/* eslint-disable react/no-unknown-property */
 /* eslint-disable no-unused-vars */
-import React from "react";
+import React, { useState } from "react";
 
 // assets
 import HeroImg from "../assets/dora-hero.png";
@@ -13,6 +14,12 @@ import { IoClose } from "react-icons/io5";
 import HeroBottom from "./HeroBottom";
 
 const Hero = () => {
+  const [isPlaying, setIsPlaying] = useState(false);
+
+  const handlePlay = () => {
+    setIsPlaying(!isPlaying);
+  };
+
   return (
     <>
       <div className="min-h-[700px] center relative">
@@ -45,7 +52,10 @@ const Hero = () => {
                 data-aos-delay="400"
                 className="mx-auto sm:mx-0"
               >
-                <button className="primary-btn center gap-2">
+                <button
+                  onClick={handlePlay}
+                  className="primary-btn center gap-2"
+                >
                   Play on
                   <span className="">
                     <FaYoutube className="text-2xl" />
@@ -96,6 +106,35 @@ const Hero = () => {
         {/* Hero Bottom Section */}
         <HeroBottom />
       </div>
+
+      {/* video player */}
+      {isPlaying && (
+        <div
+          className="absolute z-[9999] top-0 left-0 w-full h-full md:h-[800px] bg-black/70
+         backdrop-blur-lg"
+        >
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+            <div className="bg-white m-3 p-5 rounded-lg shadow-md ">
+              <div className="flex items-center justify-between pb-3">
+                <h1 className="">Made By G3RGES</h1>
+                <IoClose
+                  className="text-3xl cursor-pointer hover:scale-110 duration-200"
+                  onClick={handlePlay}
+                />
+              </div>
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/pR48dXAp_N0?si=P2C41MddLGGzHE9d"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      )}
     </>
   );
 };
