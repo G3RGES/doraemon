@@ -27,7 +27,7 @@ const MenuLinks = [
 
 const Navbar = () => {
   return (
-    <nv className="py-4">
+    <nav data-aos="fade-down" className="py-4">
       <div className="container">
         <div className="flex items-center justify-between">
           {/* logo section */}
@@ -71,7 +71,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-    </nv>
+    </nav>
   );
 };
 
