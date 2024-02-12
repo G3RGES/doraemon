@@ -24,16 +24,27 @@ const Hero = () => {
             sm:text-left px-10 sm:px-0"
             >
               <div className="" data-aos="fade-up">
-                <h1 className=" text-4xl md:text-6xl font-bold">
+                <h1
+                  data-aos="fade-up"
+                  className=" text-4xl md:text-6xl font-bold"
+                >
                   Watch Now in
                 </h1>
                 <h1 className="text-primary text-6xl font-bold">3D</h1>
               </div>
-              <p className="text-gray-500 text-sm font-semibold">
+              <p
+                data-aos="fade-up"
+                data-aos-delay="300"
+                className="text-gray-500 text-sm font-semibold"
+              >
                 The first full story in the Doraemon series was published in
                 January 1970
               </p>
-              <div className="mx-auto sm:mx-0">
+              <div
+                data-aos="fade-up"
+                data-aos-delay="400"
+                className="mx-auto sm:mx-0"
+              >
                 <button className="primary-btn center gap-2">
                   Play on
                   <span className="">
@@ -43,7 +54,7 @@ const Hero = () => {
               </div>
             </div>
             {/* image content section */}
-            <div className="relative">
+            <div data-aos="zoom-in" className="relative">
               <img
                 src={HeroImg}
                 alt="doraemon"
@@ -55,7 +66,10 @@ const Hero = () => {
               ></div>
             </div>
             {/* review content section */}
-            <div className="sm:pl-16 md:pl-24 flex justify-center sm:justify-end">
+            <div
+              data-aos="slide-left"
+              className="sm:pl-16 md:pl-24 flex justify-center sm:justify-end"
+            >
               <div className="flex items-center justify-end">
                 <div className="space-y-4">
                   <img
